@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit2 C2</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      #banner {
+        display:flex ;
+        width :80% ;
+        height:250px;
+        border:1px solid red ;
+        margin:auto;
+        background-color: rgb(128, 128, 177);
+      }
+
+      #banner > div {
+        display:flex;
+        justify-content: space-around;
+      }
+      #banner >div > h1 {
+        color:white;
+        justify-content: center;
+      }
+       /* services section */
+      #services {
+        display:grid;
+        width:80%;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: 300px;
+        gap:20px;
+     }
+      #services > div {
+        border:1px solid teal ;
+        justify-content: center;
+        margin:15px 35px;
+      }
+      #services > div >h1 {
+        box-shadow: box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+      }
+
+      /* Works section */
+
+      #works {
+        display:grid;
+        width:80%;
+        height:400px;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,150px);
+        gap:20px;
+      }
+      #works > div {
+        border:1px solid teal ;
+        justify-content: center;
+      }
+
+
+
+      /* Medium Screen */
+      @media only screen and (min-width: 500px) and (max-width: 768px) {
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows:repeat(4,150px);
+      }
+
+      /* Small Screen */
+      @media only screen and (min-width: 320px) and (max-width: 499px) {
+        grid-template-columns:repeat(1,fr);
+        grid-template-rows: repeat(8,150px);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="banner">
+        <!-- Here should be 2 divs one for the banner heading and button and the second is for banner image -->
+        <div><h1>You are in Safe hands</h1>
+          <h3>Choose the expert in end to end surgical care</h3>
+          <button>Know More</button>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/practo-care/1631634827/dweb_hero_banner.png" alt="Error">
+        </div>
+      </div>
+      <div id="services">
+        <!-- Here should be 6 divs. All of them should be in a single line for large screen. For medium and large screen refer to question statement -->
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="Error">
+          <h1>Instant video connection</h1>
+          <h1>connect within 60 seconds</h1>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="Error">
+          <h1>Instant video connection</h1>
+          <h1>connect within 60 seconds</h1>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="Error">
+          <h1>Instant video connection</h1>
+          <h1>connect within 60 seconds</h1>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="Error">
+          <h1>Instant video connection</h1>
+          <h1>connect within 60 seconds</h1>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="Error">
+          <h1>Instant video connection</h1>
+          <h1>connect within 60 seconds</h1>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="Error">
+          <h1>Instant video connection</h1>
+          <h1>connect within 60 seconds</h1>
+        </div>
+      </div>
+      <div id="works">
+        <h1>Book an appointment for an in-clinic consultation</h1>
+        <p>Find experienced doctors across all specialties</p>
+        <div>
+          <!-- Here should be 8 divs. They should be in 4 colums and two rows for large screen.For medium and large screen refer to question statement -->
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
